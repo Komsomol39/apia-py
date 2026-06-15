@@ -161,7 +161,7 @@ class TestRegistry:
 
     def test_find_no_results(self):
         r = self._registry_with_mock_index()
-        results = r.find("book a spaceship to Mars")
+        results = r.find("xyzzy-nonexistent-quantum-blockchain")
         assert results == []
 
     def test_get_manifest(self):
